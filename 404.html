@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>404 - Coordinate Not Found | WorkProof</title>
   
   <meta name="robots" content="noindex, follow">
@@ -105,6 +105,23 @@
       <div class="nav-actions">
         <a href="index.html#download" class="btn btn-primary btn-sm">Download App</a>
       </div>
+
+      <button class="mobile-toggle" aria-label="Toggle navigation menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <div class="mobile-nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="index.html#features" class="nav-link">Features</a>
+      <a href="index.html#verifier" class="nav-link">Image Verifier</a>
+      <a href="terms.html" class="nav-link">Terms of Service</a>
+      <a href="privacy.html" class="nav-link">Privacy Policy</a>
+      <a href="index.html#download" class="btn btn-primary">Download APK</a>
     </div>
   </header>
 
@@ -153,6 +170,7 @@
     </div>
   </footer>
 
+  <script src="assets/js/main.js"></script>
   <script>
     document.getElementById('currentYear').textContent = new Date().getFullYear();
   </script>
