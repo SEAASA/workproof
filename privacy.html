@@ -85,10 +85,11 @@
     @media (max-width: 680px) {
       .legal-meta-box {
         grid-template-columns: 1fr;
+        padding: 16px 18px;
+        gap: 12px;
       }
       .provider-table {
-        display: block;
-        overflow-x: auto;
+        min-width: 580px;
       }
     }
   </style>
@@ -121,7 +122,7 @@
         <a href="index.html#download" class="btn btn-primary btn-sm">Download App</a>
       </div>
 
-      <button class="mobile-toggle" aria-label="Toggle navigation menu">
+      <button class="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <line x1="3" y1="12" x2="21" y2="12"></line>
           <line x1="3" y1="6" x2="21" y2="6"></line>

@@ -1563,7 +1563,8 @@ button, input, select, textarea {
    Legal Pages (Terms of Conditions & Privacy Policy)
    =================================================================== */
 .legal-header {
-  padding: 60px 0 40px 0;
+  padding-top: calc(var(--header-height) + env(safe-area-inset-top, 0px) + 36px);
+  padding-bottom: 40px;
   border-bottom: 1px solid var(--border-card);
   background: radial-gradient(circle at 50% 0%, rgba(245, 183, 0, 0.07) 0%, transparent 60%);
 }
@@ -1572,7 +1573,7 @@ button, input, select, textarea {
   display: grid;
   grid-template-columns: 280px 1fr;
   gap: 56px;
-  padding: 60px 0 100px 0;
+  padding: 48px 0 100px 0;
 }
 
 .legal-sidebar {
@@ -1843,6 +1844,8 @@ code {
 
   .legal-grid {
     grid-template-columns: 1fr;
+    gap: 0;
+    padding: 24px 0 60px 0;
   }
 
   .legal-sidebar {
@@ -2161,7 +2164,8 @@ code {
   /* Legal Pages (Terms & Privacy) */
   .legal-header,
   .legal-page-header {
-    padding: calc(var(--header-height) + 20px) 0 28px 0;
+    padding-top: calc(var(--header-height) + env(safe-area-inset-top, 0px) + 24px);
+    padding-bottom: 28px;
   }
 
   .legal-page-title,
