@@ -1571,7 +1571,9 @@ button, input, select, textarea {
 
 .legal-grid {
   display: grid;
-  grid-template-columns: 280px 1fr;
+  grid-template-columns: 280px minmax(0, 1fr);
+  width: 100%;
+  max-width: 100%;
   gap: 56px;
   padding: 48px 0 100px 0;
 }
@@ -1617,6 +1619,10 @@ button, input, select, textarea {
   border: 1px solid var(--border-card);
   border-radius: var(--radius-xl);
   padding: 48px;
+  min-width: 0;
+  max-width: 100%;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 
 .legal-body h2 {
@@ -1843,9 +1849,16 @@ code {
   }
 
   .legal-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     gap: 0;
     padding: 24px 0 60px 0;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .legal-body {
+    padding: 28px 18px;
+    border-radius: var(--radius-lg);
   }
 
   .legal-sidebar {

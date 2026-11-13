@@ -41,6 +41,7 @@
     .legal-meta-item {
       display: flex;
       flex-direction: column;
+      min-width: 0;
     }
     .legal-meta-label {
       font-size: 0.75rem;
@@ -53,43 +54,68 @@
       font-size: 0.95rem;
       color: var(--text-pure-white);
       font-weight: 500;
+      overflow-wrap: break-word;
+      word-break: break-word;
+    }
+    .table-scroll-hint {
+      display: none;
+      font-size: 0.75rem;
+      color: var(--yellow-primary);
+      margin-bottom: 8px;
+      font-weight: 600;
+    }
+    .table-container {
+      width: 100%;
+      max-width: 100%;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      margin: 20px 0;
+      border: 1px solid var(--border-card);
+      border-radius: var(--radius-md);
+      background: var(--bg-surface);
+      display: block;
     }
     .provider-table {
       width: 100%;
+      min-width: 500px;
       border-collapse: collapse;
-      margin: 24px 0;
-      border-radius: var(--radius-md);
-      overflow: hidden;
+      margin: 0;
     }
     .provider-table th, .provider-table td {
-      padding: 14px 18px;
+      padding: 12px 14px;
       text-align: left;
       border: 1px solid var(--border-card);
       vertical-align: top;
+      overflow-wrap: break-word;
+      word-break: break-word;
     }
     .provider-table th {
       background: var(--bg-surface-elevated);
       color: var(--yellow-primary);
-      font-size: 0.85rem;
+      font-size: 0.825rem;
       text-transform: uppercase;
       letter-spacing: 0.05em;
+      white-space: nowrap;
     }
     .provider-table td {
       background: var(--bg-surface);
-      font-size: 0.9rem;
+      font-size: 0.85rem;
       color: var(--text-silver);
     }
     .provider-table td strong {
       color: var(--text-pure-white);
     }
     @media (max-width: 680px) {
+      .table-scroll-hint {
+        display: block;
+      }
       .legal-meta-box {
         grid-template-columns: 1fr;
-        padding: 16px 18px;
+        padding: 14px 14px;
         gap: 12px;
       }
       .provider-table {
-        min-width: 580px;
+        min-width: 480px;
       }
     }
   </style>
@@ -383,6 +409,7 @@
             <h2>7. Third-Party Service Providers</h2>
             <p>We share data with vetted third-party infrastructure and service providers subject to strict security protocols:</p>
 
+            <div class="table-scroll-hint"><span>⇄ Swipe table horizontally to view all columns</span></div>
             <div class="table-container">
               <table class="provider-table">
                 <thead>

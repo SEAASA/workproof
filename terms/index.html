@@ -41,6 +41,7 @@
     .legal-meta-item {
       display: flex;
       flex-direction: column;
+      min-width: 0;
     }
     .legal-meta-label {
       font-size: 0.75rem;
@@ -53,10 +54,12 @@
       font-size: 0.95rem;
       color: var(--text-pure-white);
       font-weight: 500;
+      overflow-wrap: break-word;
+      word-break: break-word;
     }
     .legal-intro-notice {
-      padding: 20px 0 24px 0;
-      margin-bottom: 24px;
+      padding: 18px 0 20px 0;
+      margin-bottom: 20px;
       border-bottom: 1px solid var(--border-hairline);
     }
     .legal-intro-notice p {
@@ -64,6 +67,8 @@
       color: var(--text-pure-white);
       line-height: 1.65;
       margin-bottom: 14px;
+      overflow-wrap: break-word;
+      word-break: break-word;
     }
     .legal-intro-notice p:last-child {
       margin-bottom: 0;
@@ -71,7 +76,7 @@
     @media (max-width: 680px) {
       .legal-meta-box {
         grid-template-columns: 1fr;
-        padding: 16px 18px;
+        padding: 14px 14px;
         gap: 12px;
       }
     }
