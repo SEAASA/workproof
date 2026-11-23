@@ -130,7 +130,6 @@ function renderSlide() {
   const [file, description] = slides[slideIndex];
   image.src = '/assets/field/' + file + '.webp';
   image.alt = description;
-  viewer.style.setProperty('--slide-background', 'url("' + image.src + '")');
   caption.textContent = description + ' · ' + (slideIndex + 1) + ' of ' + slides.length;
 }
 function moveSlide(step) {

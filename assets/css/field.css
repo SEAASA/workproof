@@ -89,7 +89,7 @@ details p{color:var(--muted);padding-bottom:1.2rem}
   .bar nav a:not(.legal-link){display:none}
   .foot nav{flex-wrap:wrap;gap:.85rem 1.25rem}
 }
-.viewer::before{content:"";position:absolute;z-index:-1;inset:-2.5rem;background:var(--slide-background,url(../field/camera.webp)) center/cover;filter:blur(26px) brightness(.38);pointer-events:none}
+.viewer::before{content:"";position:absolute;z-index:-1;inset:-4px;background:#10100e url(../field/contours.webp) center/cover;filter:blur(1.5px);pointer-events:none}
 .slide-stage{display:grid;grid-template-columns:44px minmax(0,1fr) 44px;align-items:center;justify-items:center;gap:.5rem}
 .slide-stage img{display:block;max-width:100%;object-fit:contain}
 .slide-arrow{width:44px;height:44px;border:1px solid #b2aa84;border-radius:50%;background:#10100e;color:var(--yellow);font-size:1.25rem;line-height:1;cursor:pointer}
