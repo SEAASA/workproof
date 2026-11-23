@@ -12,8 +12,8 @@
   <meta property="og:image" content="https://workproof.seaasa.com/assets/images/logo-square.png">
   <link rel="icon" href="/favicon.ico"><link rel="manifest" href="/site.webmanifest">
   <link rel="preload" href="/assets/fonts/barlow-condensed-800.ttf" as="font" type="font/ttf" crossorigin>
-  <link rel="stylesheet" href="/assets/css/field.css">
-  <script defer src="/assets/js/field.js"></script>
+  <link rel="stylesheet" href="/assets/css/field.css?v=gallery2">
+  <script defer src="/assets/js/field.js?v=gallery2"></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -38,22 +38,29 @@
 <section class="wrap tools" id="features">
   <div class="section-heading"><div><p class="kicker">Field tools</p><h2>Inside WorkProof</h2></div><p>Follow a site visit from the first photo to the finished report. Select a tool to see it in the app.</p></div>
   <div class="tour" id="screenshots"><div class="choices">
-<div id="capture" class="tool"><a href="/assets/field/camera.webp" data-caption="Professional camera" aria-current="true"><strong>GPS camera</strong><span>Stamp each photo with the time, coordinates, and project details at capture.</span></a></div>
-<div id="fieldmap" class="tool"><a href="/assets/field/map.webp" data-caption="Field map" aria-current="false"><strong>Field map</strong><span>Find photos by location and open a capture from its map marker.</span></a></div>
-<div id="checklists" class="tool"><a href="/assets/field/checklist.webp" data-caption="Checklist progress" aria-current="false"><strong>Site checklists</strong><span>Tick off inspection items and attach photos as you move through a site.</span></a></div>
-<div id="verifier" class="tool"><a href="/assets/field/verify.webp" data-caption="Image verification result" aria-current="false"><strong>Image verifier</strong><span>Inspect a WorkProof photo’s embedded proof seal and review its verification result.</span></a></div>
-<div id="reports" class="tool"><a href="/assets/field/report.webp" data-caption="PDF report editor" aria-current="false"><strong>PDF reports</strong><span>Arrange site photos on the page, choose a layout, and export the inspection record.</span></a></div>
-<div id="backup" class="tool"><a href="/assets/field/sync.webp" data-caption="Google Drive backup" aria-current="false"><strong>Drive backup</strong><span>Connect your Google Drive account and choose the records you want to back up.</span></a></div>
-  </div><figure class="viewer"><a id="view-link" href="/assets/field/camera.webp" aria-label="Open full camera screenshot"><img id="view-image" src="/assets/field/camera.webp" alt="Professional camera with GPS and project stamps" loading="lazy"></a><figcaption id="view-caption" aria-live="polite">Professional camera</figcaption></figure></div>
+<div id="capture" class="tool"><button type="button" aria-pressed="true" aria-controls="feature-viewer"><strong>GPS camera</strong><span>Stamp each photo with the time, coordinates, and project details at capture.</span></button></div>
+<div id="fieldmap" class="tool"><button type="button" aria-pressed="false" aria-controls="feature-viewer"><strong>Field map</strong><span>Find photos by location and open a capture from its map marker.</span></button></div>
+<div id="checklists" class="tool"><button type="button" aria-pressed="false" aria-controls="feature-viewer"><strong>Site checklists</strong><span>Tick off inspection items and attach photos as you move through a site.</span></button></div>
+<div id="verifier" class="tool"><button type="button" aria-pressed="false" aria-controls="feature-viewer"><strong>Image verifier</strong><span>Inspect a WorkProof photo’s embedded proof seal and review its verification result.</span></button></div>
+<div id="reports" class="tool"><button type="button" aria-pressed="false" aria-controls="feature-viewer"><strong>PDF reports</strong><span>Arrange site photos on the page, choose a layout, and export the inspection record.</span></button></div>
+<div id="backup" class="tool"><button type="button" aria-pressed="false" aria-controls="feature-viewer"><strong>Drive backup</strong><span>Connect your Google Drive account and choose the records you want to back up.</span></button></div>
+  </div><figure class="viewer" id="feature-viewer" aria-label="Feature screenshots">
+    <div class="slide-stage">
+      <button type="button" class="slide-arrow" id="previous-slide" aria-label="Previous screenshot">&#10094;</button>
+      <img id="view-image" src="/assets/field/camera.webp" alt="Professional camera" loading="lazy">
+      <button type="button" class="slide-arrow" id="next-slide" aria-label="Next screenshot">&#10095;</button>
+    </div>
+    <figcaption id="view-caption" aria-live="polite" aria-atomic="true">Professional camera · 1 of 4</figcaption>
+  </figure></div>
 </section>
 <section class="themes" id="themes"><div class="wrap"><div class="section-heading"><div><p class="kicker">App appearance</p><h2>Choose your view</h2></div><p>Six home screen themes, from satellite imagery to a pared-back camera view.</p></div>
 <div class="samples">
-<figure><a href="/assets/field/home.webp"><img src="/assets/field/home.webp" alt="Open the Dark Satellite home screen" loading="lazy"></a><figcaption>Dark Satellite</figcaption></figure>
-<figure><a href="/assets/field/city.webp"><img src="/assets/field/city.webp" alt="Open the City Light home screen" loading="lazy"></a><figcaption>City Light</figcaption></figure>
-<figure><a href="/assets/field/nature.webp"><img src="/assets/field/nature.webp" alt="Open the Calm Nature home screen" loading="lazy"></a><figcaption>Calm Nature</figcaption></figure>
-<figure><a href="/assets/field/glass.webp"><img src="/assets/field/glass.webp" alt="Open the Gradient Glass home screen" loading="lazy"></a><figcaption>Gradient Glass</figcaption></figure>
-<figure><a href="/assets/field/landscape.webp"><img src="/assets/field/landscape.webp" alt="Open the Blurred Landscape home screen" loading="lazy"></a><figcaption>Blurred Landscape</figcaption></figure>
-<figure><a href="/assets/field/minimal.webp"><img src="/assets/field/minimal.webp" alt="Open the Minimalist home screen" loading="lazy"></a><figcaption>Minimalist</figcaption></figure>
+<figure><img src="/assets/field/home.webp" alt="Dark Satellite home screen" loading="lazy"><figcaption>Dark Satellite</figcaption></figure>
+<figure><img src="/assets/field/city.webp" alt="City Light home screen" loading="lazy"><figcaption>City Light</figcaption></figure>
+<figure><img src="/assets/field/nature.webp" alt="Calm Nature home screen" loading="lazy"><figcaption>Calm Nature</figcaption></figure>
+<figure><img src="/assets/field/glass.webp" alt="Gradient Glass home screen" loading="lazy"><figcaption>Gradient Glass</figcaption></figure>
+<figure><img src="/assets/field/landscape.webp" alt="Blurred Landscape home screen" loading="lazy"><figcaption>Blurred Landscape</figcaption></figure>
+<figure><img src="/assets/field/minimal.webp" alt="Minimalist home screen" loading="lazy"><figcaption>Minimalist</figcaption></figure>
 </div></div></section>
 <section class="wrap faq" id="faq"><div><p class="kicker">App guide</p><h2>Questions</h2></div><div>
 <details><summary>Where are my photos stored?</summary><p>WorkProof keeps your captures on your device. You can connect your Google Drive account to back up or share selected work. Read the <a href="/privacy.html">privacy policy</a> for details.</p></details>
